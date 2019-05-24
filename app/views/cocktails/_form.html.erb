@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+      <%= simple_form_for @cocktail do |c| %>
+        <%= c.input :name %>
+        <%= c.input :photo %>
+        <%= c.input :photo_cache, as: :hidden %>
+        <%= c.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>

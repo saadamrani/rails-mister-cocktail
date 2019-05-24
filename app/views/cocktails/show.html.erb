@@ -11,6 +11,10 @@
       <% end  %>
 
       <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+        <%= link_to edit_cocktail_path(@cocktail), class: 'pull-right btn btn-default' do %>
+          <i class="fa fa-pencil"></i> Edit this cocktail
+        <% end %>
+
       <%= link_to "All cocktails you alcoholic", cocktails_path, class: 'btn btn-primary' %>
     </div>
   </div>
