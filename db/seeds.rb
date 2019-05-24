@@ -10,10 +10,3 @@ data["drinks"].each do |liquor|
   Ingredient.create!(name: liquor["strIngredient1"])
 end
 
-#Ingredient.create(name: "lemon")
-#Ingredient.create(name: "ice")
-#Ingredient.create(name: "mint leaves")
-
-Cocktail.create(name: "Vodka lemon")
-Cocktail.create(name: "Gin tonic")
-Cocktail.create(name: "Whiskey coke")
